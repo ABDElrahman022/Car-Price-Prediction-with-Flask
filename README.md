@@ -47,3 +47,15 @@ To run the application locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/ABDElrahman022/Car-Price-Prediction-with-Flask.git
+2. Install dependencies:
+   ```bash
+      pip install -r requirements.txt
+3. Run the Flask application:
+   ```bash
+      python app.py
+4. Access the application at http://localhost:5000 in your web browser.
+
+## Future Enhancements
+- Improve model accuracy by exploring different machine learning algorithms.
+- Enhance the user interface with additional features such as historical price trends and model performance metrics.
+
