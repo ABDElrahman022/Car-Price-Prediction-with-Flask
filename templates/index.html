@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+<body>
+    <h2>Car Price Prediction</h2>
+
+    <form action="/predict" method="post">
+
+        <!-- Mileage Input -->
+        <div>
+            <label for="mileage">Mileage:</label>
+            <input type="number" name="mileage" required>
+        </div>
+
+        <!-- EngineV Input -->
+        <div>
+            <label for="enginev">EngineV:</label>
+            <input type="number" name="enginev" required>
+        </div>
+
+        <!-- Brand Inputs -->
+        <div>
+            <label style="text-align: right;" for="brand">Brand:</label>
+            <span>BMW</span><input type="number" name="BMW" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="brand">Brand:</label>
+            <span>Mercedes-Benz</span><input type="number" name="Mercedes-Benz" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="brand">Brand:</label>
+            <span>Mitsubishi</span><input type="number" name="Mitsubishi" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="brand">Brand:</label>
+            <span>Renault</span><input type="number" name="Renault" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="brand">Brand:</label>
+            <span>Toyota</span><input type="number" name="Toyota" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="brand">Brand:</label>
+            <span>Volkswagen</span><input type="number" name="Volkswagen" required>
+        </div>
+
+        <!-- Body Inputs -->
+        <div>
+            <label style="text-align: right;" for="body">Body:</label>
+            <span>Hatch</span><input type="number" name="hatch" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="body">Body:</label>
+            <span>Other</span><input type="number" name="other" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="body">Body:</label>
+            <span>Sedan</span><input type="number" name="sedan" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="body">Body:</label>
+            <span>Vagon</span><input type="number" name="vagon" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="body">Body:</label>
+            <span>Van</span><input type="number" name="van" required>
+        </div>
+
+        <!-- Engine Type Inputs -->
+        <div>
+            <label style="text-align: right;" for="engine_type">Engine Type:</label>
+            <span>Gas</span><input type="number" name="Gas" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="engine_type">Engine Type:</label>
+            <span>Other</span><input type="number" name="Other" required>
+        </div>
+        <div>
+            <label style="text-align: right;" for="engine_type">Engine Type:</label>
+            <span>Petrol</span><input type="number" name="Petrol" required>
+        </div>
+
+        <!-- Registration Input -->
+        <div>
+            <label style="text-align: right;" for="registration">Registration:</label>
+            <input type="number" name="registration" required>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Predict Price">
+
+    </form>
+
+    <h3>Price: {% if price %}{{ price }} euros{% endif %}</h3>
+</body>
+</html>
